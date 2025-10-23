@@ -3,18 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
     <title>Roteirizador</title>
   </head>
   <body>
-    <label>
-      Arquivo
-      <input id="file" type="file" />
-    </label>
-    <button id="convert" type="button">Convert</button>
-    <div id="log"></div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
-    <!-- SheetJS (xlsx) -->
-    <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
-    <script src="index.js"></script>
+    <main class="main">
+      <div class="input">
+        <label for="file">Arquivo</label>
+        <input id="file" type="file" title=" " />
+      </div>
+
+      <button id="convert" type="button">Convert</button>
+      <div id="log"></div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+      <!-- SheetJS (xlsx) -->
+      <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+      <script src="index.js"></script>
+    </main>
   </body>
 </html>
